@@ -1,0 +1,145 @@
+{
+    "info": {
+      "_postman_id": "7a2c9d52-8f2b-4b92-a119-3a1b1d8f7e36",
+      "name": "Python Webserver",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+      {
+        "name": "Signup",
+        "request": {
+          "method": "POST",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"username\": \"user1\",\n  \"password\": \"password1\"\n}",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "localhost:5000/signup",
+            "host": [
+              "localhost"
+            ],
+            "port": "5000",
+            "path": [
+              "signup"
+            ]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Login",
+        "request": {
+          "method": "POST",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"username\": \"user1\",\n  \"password\": \"password1\"\n}",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "localhost:5000/login",
+            "host": [
+              "localhost"
+            ],
+            "port": "5000",
+            "path": [
+              "login"
+            ]
+          }
+        },
+        "response": []
+      },
+      {
+            "name": "Create Channel",
+            "request": {
+              "method": "POST",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": {
+                "mode": "raw",
+                "raw": "{\n  \"channel_name\": \"example-channel\"\n}"
+              },
+              "url": {
+                "raw": "localhost:5000/create",
+                "host": [
+                  "localhost"
+                ],
+                "port": "5000",
+                "path": [
+                  "create"
+                ]
+              }
+            },
+            "response": []
+      },
+      {
+        "name": "Join",
+        "request": {
+          "method": "POST",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"channel_name\": \"channel1\"\n}",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "localhost:5000/join",
+            "host": [
+              "localhost"
+            ],
+            "port": "5000",
+            "path": [
+              "join"
+            ]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Leave",
+        "request": {
+          "method": "POST",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"channel_name\": \"channel1\"\n}",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "localhost:5000/leave",
+            "host": [
+              "localhost"
+            ],
+            "port": "5000",
+            "path": [
+              "leave"
+            ]
+          }
+        },
+        "response": []
+      }
+    ]
+  }
+  
